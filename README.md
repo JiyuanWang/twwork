@@ -1,9 +1,9 @@
 # ThoughtWorks Homework
 
-#  代码结构说明：
+##  代码结构说明：
 
 discount包:  优惠策略相关接口&实现类。
-      DiscountService：优惠策略的接口
+      * DiscountService：优惠策略的接口
       NoDiscountServiceImpl： 无优惠的策略实现类
       PercentDiscountServiceImpl： 打折优惠策略的实现类(95折)
       GiftDiscountServiceImpl：赠品优惠策略的实现类(买二赠一)
@@ -27,11 +27,11 @@ test包: 测试类。
       _PercentDiscountServiceImplTest：对应测试类。
       _PrintTicketServiceTest：对应测试类。
 
-# 存在的不足：
+## 存在的不足：
       1: 金额计算采用了double, 应该采用 BigDecimal。
       2: 打折优惠抽象的不好(例如：支持多种折扣)，赠品优惠抽象的不好(例如支持 买三增二等多种形式)。
  
-# 备注说明：
+## 备注说明：
       1: 代码使用Eclipse编写，上传到Git时只上传了src源代码。
       2: 测试框架采用了TestNG。
       
